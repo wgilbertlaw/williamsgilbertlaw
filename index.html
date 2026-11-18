@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Law Office of Williams Gilbert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f4;--surface:#ffffff;--ink:#14231e;--muted:#4f5e58;--green:#0f3d33;--gold:#b08a3e;--line:#d9ddd6;--on-green:#f6f7f4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1714;--surface:#15211d;--ink:#eef0ea;--muted:#a8b4ae;--green:#0a2b24;--gold:#d2ae62;--line:#27362f;--on-green:#eef0ea}}
+:root[data-theme="dark"]{--bg:#0e1714;--surface:#15211d;--ink:#eef0ea;--muted:#a8b4ae;--green:#0a2b24;--gold:#d2ae62;--line:#27362f;--on-green:#eef0ea}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;gap:16px;flex-wrap:wrap}
+.logo{font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;text-decoration:none}
+nav{display:flex;gap:22px;font-size:15px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:88px 0 72px}
+.hero h1{font-size:clamp(36px,6vw,62px);max-width:16em;letter-spacing:-.02em}
+.hero p{max-width:34em;color:var(--muted);font-size:19px;margin:24px 0 36px}
+.btn{display:inline-block;background:var(--green);color:var(--on-green);padding:14px 26px;border-radius:2px;text-decoration:none;font-weight:600;border:0;font-size:16px;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--gold);color:#14231e}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:12px}
+.btn.alt:hover{background:var(--ink);color:var(--bg)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:38em;margin:0 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));border:1px solid var(--line);background:var(--surface)}
+.cell{padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.cell h3{font-size:21px;margin-bottom:8px}
+.cell p{margin:0;color:var(--muted);font-size:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.two p{margin:0 0 16px;color:var(--muted)}
+.person{padding:22px 0;border-bottom:1px solid var(--line)}
+.person:first-of-type{padding-top:0}
+.person h3{font-size:22px}
+.person span{color:var(--gold);font-weight:600;font-size:15px}
+.person p{margin:6px 0 0}
+.band{background:var(--green);color:var(--on-green);border-top:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:32px}
+.facts strong{display:block;font-family:Fraunces,Georgia,serif;font-size:44px;color:var(--gold)}
+.contact dl{margin:0}
+.contact dt{font-weight:600;margin-top:18px}
+.contact dd{margin:2px 0 0;color:var(--muted)}
+form{display:grid;gap:16px;background:var(--surface);padding:28px;border:1px solid var(--line)}
+label{display:grid;gap:6px;font-weight:500;font-size:15px}
+input,select,textarea{font:inherit;padding:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:2px;width:100%}
+textarea{min-height:110px;resize:vertical}
+#ok{display:none;color:var(--green);font-weight:600;margin:0}
+@media (prefers-color-scheme:dark){#ok{color:var(--gold)}}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+@media(max-width:760px){.two{grid-template-columns:1fr;gap:32px}.hero{padding:56px 0 48px}.btn.alt{margin:12px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Law Office of Williams Gilbert</a>
+<nav aria-label="Main"><a href="#about">About us</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<h1>Michigan attorneys for family law and estate planning.</h1>
+<p>The Law Office of Williams Gilbert has served Southwest Detroit for over 42 years. Our bilingual staff is ready to assist you.</p>
+<a class="btn" href="#contact">Contact us</a><a class="btn alt" href="tel:+13134045225">Call +1 313 404 5225</a>
+</div>
+
+<section><div class="wrap"><div class="grid">
+<div class="cell"><h3>Proven track record</h3><p>We have served the Metro-Detroit area for over 42 years, with over 15,000 files. Our bilingual staff is ready to assist you.</p></div>
+<div class="cell"><h3>Personalized representation</h3><p>Quality representation in real estate, probate, wills and trusts, and other family law cases.</p></div>
+<div class="cell"><h3>Full-time support</h3><p>Our experienced attorneys and staff give you the personal attention you deserve, which is not always available at larger firms.</p></div>
+</div></div></section>
+
+<section id="about"><div class="wrap two">
+<div><h2>About us</h2></div>
+<div>
+<p>The Law Office of Williams Gilbert has served the Southwest Detroit area for over 42 years. We provide quality representation in real estate transactions, commercial and residential purchases and sales, probate administration, wills and trusts, and other family law cases.</p>
+<div class="person"><h3>Williams Gilbert</h3><span>Attorney</span><p><a href="mailto:williamsgilbert1291@gmail.com">williamsgilbert1291@gmail.com</a></p></div>
+<div class="person"><h3>Anthony V. Baker</h3><span>Attorney</span><p><a href="mailto:anthonyvbaker8@gmail.com">anthonyvbaker8@gmail.com</a></p></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Services</h2>
+<p class="lead">We are here to represent you in estate planning and probate.</p>
+<div class="grid">
+<div class="cell"><h3>Estate planning</h3><p>Wills and trusts that protect your family and your property.</p></div>
+<div class="cell"><h3>Probate administration</h3><p>Guidance through the probate process after a loved one passes.</p></div>
+<div class="cell"><h3>Real estate</h3><p>Commercial and residential purchases and sales.</p></div>
+<div class="cell"><h3>Family law</h3><p>Representation in family law cases.</p></div>
+</div>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>Facts about us</h2>
+<p class="lead" style="color:inherit;opacity:.85">We have been in Southwest Detroit since September 1982, and as of 2024 we have handled over 15,000 cases.</p>
+<div class="facts">
+<div><strong>15,000+</strong>cases handled</div>
+<div><strong>42+</strong>years practicing</div>
+<div><strong>185+</strong>cities served</div>
+<div><strong>1982</strong>Detroit opening</div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap two contact">
+<div>
+<h2>Contact us</h2>
+<p class="lead">Tell us briefly what you need and we will get back to you.</p>
+<dl>
+<dt>Office</dt><dd>1020 Springwells St, Detroit, MI 48209</dd>
+<dt>Phone</dt><dd><a href="tel:+13134045225">+1 313 404 5225</a></dd>
+<dt>Email</dt><dd><a href="mailto:williamsgilbert1291@gmail.com">williamsgilbert1291@gmail.com</a><br><a href="mailto:anthonyvbaker8@gmail.com">anthonyvbaker8@gmail.com</a></dd>
+<dt>Hours</dt><dd>Monday to Thursday, 8:30am to 5:30pm<br>Friday, 8am to 12pm</dd>
+</dl>
+</div>
+<form id="f" name="enquiry" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="enquiry">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Email or phone<input name="contact" required></label>
+<label>Type of matter
+<select name="type"><option>Estate planning, wills and trusts</option><option>Probate administration</option><option>Real estate</option><option>Family law</option><option>Not sure</option></select></label>
+<label>How can we help?<textarea name="msg" required></textarea></label>
+<button class="btn" type="submit">Send enquiry</button>
+<p id="ok" role="status">Thank you. We will get back to you soon.</p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Law Office of Williams Gilbert. This website gives general information and is not legal advice.</div></footer>
+
+</body>
+</html>
